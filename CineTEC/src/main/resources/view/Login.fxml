@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+
+    <style>
+        -fx-background-color: #121212; /* Fondo de la app */
+    </style>
+
+    <VBox alignment="CENTER" maxWidth="400.0" prefHeight="400.0" prefWidth="350.0" spacing="25.0" style="-fx-background-color: #1E1E1E; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, black, 20, 0.5, 0, 0);">
+
+        <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+        </padding>
+
+        <children>
+         <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                   <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: white;" text="Cine" />
+                   <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #E50914;" text="TEC" />
+            </children>
+         </HBox>
+
+            <Label style="-fx-text-fill: #AAAAAA;" text="Inice sesion o cree una cuenta nueva" />
+
+            <VBox spacing="10.0">
+                <Label style="-fx-text-fill: white;" text="Usuario o correo" />
+                <TextField fx:id="txtUsuario" promptText="Ingrese su correo o usuario" style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: #666666; -fx-border-color: #444444; -fx-border-radius: 5; -fx-background-radius: 5;" />
+            </VBox>
+
+            <VBox spacing="10.0">
+                <HBox alignment="CENTER_LEFT" spacing="5.0">
+                    <Label style="-fx-text-fill: white;" text="Contraseña" />
+                    <Region HBox.hgrow="ALWAYS" />
+                </HBox>
+                <PasswordField fx:id="txtPassword" promptText="Ingrese su contraseña" style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: #666666; -fx-border-color: #444444; -fx-border-radius: 5; -fx-background-radius: 5;" />
+            </VBox>
+
+            <Button fx:id="btnLogin" maxWidth="1.7976931348623157E308" styleClass="action-btn" text="Iniciar sesion" VBox.vgrow="NEVER" />
+
+            <HBox alignment="CENTER" spacing="5.0">
+                <Label style="-fx-text-fill: #E50914; -fx-cursor: hand;" text="Registrate aqui" />
+            </HBox>
+
+        </children>
+    </VBox>
+</StackPane>
