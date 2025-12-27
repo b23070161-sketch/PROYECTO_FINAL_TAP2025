@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="720.0" prefWidth="1080.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <VBox prefWidth="250.0" spacing="10.0" styleClass="sidebar" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="80.0" spacing="5">
+                    <children>
+                        <Label style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold;" text="Cine" />
+                        <Label style="-fx-text-fill: #E50914; -fx-font-size: 20px; -fx-font-weight: bold;" text="TEC" />
+                    </children>
+                </HBox>
+
+                <Button fx:id="btnPeliculas" alignment="BASELINE_LEFT" maxWidth="Infinity" styleClass="menu-btn" text="Gestionar Peliculas" />
+                <Button fx:id="btnFunciones" alignment="BASELINE_LEFT" maxWidth="Infinity" styleClass="menu-btn" text="Gestionar Funciones" />
+                <Button fx:id="btnSalas" alignment="BASELINE_LEFT" maxWidth="Infinity" styleClass="menu-btn" text="Gestionar Salas" />
+                <Button fx:id="btnPrecios" alignment="BASELINE_LEFT" maxWidth="Infinity" styleClass="menu-btn" text="Gestionar Precios" />
+
+                <Region VBox.vgrow="ALWAYS" /> <Button fx:id="btnSalir" alignment="BASELINE_LEFT" maxWidth="Infinity" styleClass="menu-btn" text="Cerrar Sesion" />
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <StackPane fx:id="contentArea" styleClass="content-area" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER" spacing="20">
+                    <Label style="-fx-text-fill: #333333; -fx-font-size: 30;" text="Bienvenido." />
+                </VBox>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

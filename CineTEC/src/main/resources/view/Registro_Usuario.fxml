@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.login.RegistroController">
+
+    <style>
+        -fx-background-color: #121212;
+    </style>
+
+    <VBox alignment="CENTER" maxWidth="550.0" prefWidth="400.0" spacing="15.0" style="-fx-background-color: #1E1E1E; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, black, 20, 0.5, 0, 0);">
+
+        <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+        </padding>
+
+        <children>
+            <HBox alignment="CENTER" spacing="5.0">
+                <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: white;" text="Cine" />
+                <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #E50914;" text="TEC" />
+            </HBox>
+
+            <VBox spacing="5.0">
+                <Label style="-fx-text-fill: white;" text="Fecha de Nacimiento" />
+                <DatePicker fx:id="dpFechaNacimiento" maxWidth="Infinity" style="-fx-background-color: #333333;" />
+            </VBox>
+
+            <VBox spacing="5.0">
+                <Label style="-fx-text-fill: white;" text="Nombre de Usuario" />
+                <TextField fx:id="txtNombre" maxWidth="Infinity" style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: #666666; -fx-border-color: #444444; -fx-border-radius: 5; -fx-background-radius: 5;" />
+            </VBox>
+
+            <VBox spacing="5.0">
+                <Label style="-fx-text-fill: white;" text="Correo Electrónico" />
+                <TextField fx:id="txtEmail" maxWidth="Infinity" style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: #666666; -fx-border-color: #444444; -fx-border-radius: 5; -fx-background-radius: 5;" />
+            </VBox>
+
+            <VBox spacing="5.0">
+                <Label style="-fx-text-fill: white;" text="Contraseña" />
+                <PasswordField fx:id="txtPassword" maxWidth="Infinity" style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: #666666; -fx-border-color: #444444; -fx-border-radius: 5; -fx-background-radius: 5;" />
+            </VBox>
+
+            <VBox spacing="5.0">
+                <Label style="-fx-text-fill: white;" text="Confirmar Contraseña" />
+                <PasswordField fx:id="txtConfirmPassword" maxWidth="Infinity" style="-fx-background-color: #333333; -fx-text-fill: white; -fx-prompt-text-fill: #666666; -fx-border-color: #444444; -fx-border-radius: 5; -fx-background-radius: 5;" />
+            </VBox>
+
+            <HBox minHeight="10" />
+
+            <Button fx:id="btnRegister" maxWidth="1.7976931348623157E308" onAction="#handleRegister" styleClass="action-btn" text="Registrarse" VBox.vgrow="NEVER" />
+
+            <HBox alignment="CENTER" spacing="5.0">
+                <Label fx:id="lblGoToLogin" style="-fx-text-fill: #E50914; -fx-cursor: hand;" text="Volver al Inicio de Sesion" underline="true" />
+            </HBox>
+
+        </children>
+    </VBox>
+</StackPane>
